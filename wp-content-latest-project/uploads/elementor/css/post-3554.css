@@ -1,0 +1,23 @@
+.elementor-3554 .elementor-element.elementor-element-aff6d0a {
+    padding: 120px 0px 30px 0px;
+}
+
+.elementor-3554 .elementor-element.elementor-element-56cae06 h2 {
+    color: #;
+}
+
+.elementor-3554 .elementor-element.elementor-element-23fbb82 {
+    padding: 0px 100px 120px 100px;
+}
+
+@media(max-width:1024px) {
+    .elementor-3554 .elementor-element.elementor-element-23fbb82 {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+    .elementor-3554 .elementor-element.elementor-element-1d8ab79 {
+        width: 100%;
+    }
+}
