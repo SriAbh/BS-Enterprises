@@ -2518,7 +2518,7 @@ a.dark-btn:hover {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    border: 1px solid var(--themeht-border-dark-color);
+    border: 1px solid #3f48cc;
     display: inline-block;
     text-align: center;
     -webkit-transition: all .3s ease-in-out;
@@ -2526,12 +2526,14 @@ a.dark-btn:hover {
     transition: all .3s ease-in-out;
     border-radius: 50%;
     background: var(--themeht-white-color);
+    position: absolute;
+    top: 33%;
 }
 
 .swiper .swiper-button-prev:hover,
 .swiper .swiper-button-next:hover {
-    background: var(--themeht-bg-dark-color);
-    border-color: var(--themeht-bg-dark-color);
+    background: #3f48cc;
+    border-color: white;
 }
 
 .swiper .swiper-button-prev:after {

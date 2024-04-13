@@ -1188,5 +1188,48 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="/search.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('.needs-validation');
+    
+        form.addEventListener('submit', function(event) {
+          if (!form.checkValidity()) {
+            event.preventDefault(); 
+            event.stopPropagation();
+          }
+    
+          form.classList.add('was-validated');
+    
+          var name = document.getElementById('name').value.trim();
+          var email = document.getElementById('email').value.trim();
+          var mobile = document.getElementById('Num').value.trim();
+          var message = document.getElementById('ta').value.trim();
+    
+          var isValid = true;
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    
+          if (name === '') {
+            isValid = false;
+          }
+    
+          if (email === '' || !emailRegex.test(email)) {
+            isValid = false;
+          }
+    
+          if (mobile === '' || mobile.length !== 10 || isNaN(mobile)) {
+            isValid = false;
+          }
+    
+          if (message === '') {
+            isValid = false;
+          }
+    
+          if (!isValid) {
+            event.preventDefault(); 
+            event.stopPropagation();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
